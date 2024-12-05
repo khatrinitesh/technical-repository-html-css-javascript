@@ -1,0 +1,45 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Container for icons */
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Basic styling for icons */
+.icon {
+    font-size: 50px;
+    color: #007bff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation for rotating the icon */
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+        color: #007bff;
+    }
+    50% {
+        transform: rotate(180deg);
+        color: #28a745;
+    }
+    100% {
+        transform: rotate(360deg);
+        color: #007bff;
+    }
+}
+
+/* Class to trigger the animation */
+.animate {
+    animation: rotateIcon 1s ease-in-out;
+}

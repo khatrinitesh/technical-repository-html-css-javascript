@@ -1,0 +1,57 @@
+/* Basic styles for the accordion */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Accordion container */
+.accordion {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Accordion button styles */
+.accordion-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+}
+
+/* Accordion content */
+.accordion-content {
+    padding: 0 15px;
+    background-color: #f9f9f9;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Smooth animation for opening */
+    opacity: 0; /* Hidden content */
+    transition: opacity 0.5s ease-out;
+}
+
+/* Active class for the opened section */
+.accordion-item.active .accordion-content {
+    max-height: 200px; /* You can adjust the height */
+    opacity: 1;
+}

@@ -1,0 +1,33 @@
+/* Basic styles for tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Active tab style */
+.tab.active {
+    background-color: #28a745;
+}
+
+/* Tab content styles */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Active content should be displayed */
+.tab-content.active {
+    display: block;
+}

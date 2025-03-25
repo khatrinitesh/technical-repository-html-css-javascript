@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.ios-safari.bodyClass {
+    background-color: lightblue;
+}
+
+/* iOS Chrome-specific styles (light green) */
+.ios-chrome.bodyClass {
+    background-color: lightgreen;
+}
+
+/* Android browser-specific styles (light blue for all browsers on Android) */
+.android-browser.bodyClass {
+    background-color: 2;
+}
+
+/* Desktop Chrome-specific styles (orange) */
+.desktop-chrome.bodyClass {
+    background-color: orange;
+}
+
+.desktop-chrome .headTitle {
+    color: red;
+}

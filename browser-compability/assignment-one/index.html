@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bodyClass">
+
+    <div class="headTitle">HeadTitle122</div>
+
+    <script>
+        // Log the user agent for debugging
+        console.log(navigator.userAgent);
+
+        // Detect if the user is on iOS Safari
+        if (navigator.userAgent.match(/iPhone|iPad|iPod/) && !navigator.userAgent.match(/CriOS/)) {
+            console.log('iOS Safari detected');
+            document.body.classList.add('ios-safari');
+        }
+        
+        // Detect if the user is on Chrome on iOS (CriOS is the identifier for Chrome on iOS)
+        else if (navigator.userAgent.match(/iPhone|iPad|iPod/) && navigator.userAgent.match(/CriOS/)) {
+            console.log('Chrome on iOS detected');
+            document.body.classList.add('ios-chrome');
+        }
+
+        // Detect if the user is on Android (any browser)
+        else if (navigator.userAgent.match(/Android/)) {
+            console.log('Android browser detected');
+            document.body.classList.add('android-browser');
+        }
+
+        // Detect if the user is on Desktop Chrome (or any desktop browser)
+        else if (navigator.userAgent.match(/Chrome/) && !navigator.userAgent.match(/Mobile/)) {
+            console.log('Desktop Chrome detected');
+            document.body.classList.add('desktop-chrome');
+        }
+    </script>
+</body>
+</html>
